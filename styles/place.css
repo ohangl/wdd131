@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-color: #f5e6e8;  
+    --primary-color: #d5c7bc;  
+    --font-color: #333;  
+}
+
+html, body {
+    min-height: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    color: #333;
+    background-color:#d5c7bc;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+ 
+
+
+main, footer {
+    
+    
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;  
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+img { 
+    height: 60%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.data {
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-weight: bolder;
+    text-align: center;
+    padding: 0;
+}
+
+p {
+    font-weight: lighter;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+
+.weather {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    ;
+}
+
+
+footer {
+    padding: 10px 0;
+}
+

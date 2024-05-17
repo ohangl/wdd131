@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angela Chacon">
+    <meta name="description" content="WDD 131 Place Page Lago Di Como">
+    <title>WDD 131 W03- Angela</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lago Di Como, Italia</h1>
+    </header>
+    <main>
+        <div class="hero"> 
+            <picture> 
+             <source srcset="/images/lago-large.webp" media="(min-width: 1000px)">
+             <source srcset="images/lago-medium.webp" media="(min-width: 550px)">
+             <img src="images/lago-dicomo.webp" width="400" height="200" alt="Lago Di Como">
+            </picture>
+        </div>
+    </main>
+    <section class="data">
+        <h2>Data</h2>
+        <h3>Catchment Area: <p>4.509 km2</p></h3>
+        <h3>Population: <p>777</p></h3>
+        <h3>Location: <p>Lombardy, Italy</p></h3>
+        <h3>Language: <p>Italian</p></h3>
+        <h3>Max. length: <p>46km</p></h3>
+        <h3>Max width: <p>4.5km</p></h3>
+        <h3>Surface Area: <p>154m</p></h3>
+        <h3>Max. depth: <p>425m</p></h3>
+    </section>
+    <section class="weather">
+        <h2>Weather </h2>
+        <h3><img class="icon" src="images/weather.svg"  width="100" alt="icon"></h3>
+        <h3>Temperature: <p>25°C</p></h3>
+        <h3>Conditions: <p>Clear</p></h3>
+        <h3>Wind: <p>4 km/h</p></h3>
+        <h3>Wind Chill: <p><span id="windChill"></span></p></h3>
+    </section>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Angela Chacon</p>
+        <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
