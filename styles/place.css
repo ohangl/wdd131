@@ -28,13 +28,18 @@ header {
     padding: 20px;
 }
 
+
 h1 {
     text-align: center;
     font-weight: bold;
 }
  
 
+.hero img {
+    background-attachment: fixed;
+    background-size: cover;
 
+}
 main, footer {
     
     
@@ -69,7 +74,7 @@ h3 {
     padding: 0;
 }
 
-p {
+dl {
     font-weight: lighter;
     display: inline-block;
     margin: 10px 10px;

@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,34 +18,52 @@
     <main>
         <div class="hero"> 
             <picture> 
-             <source srcset="/images/lago-large.webp" media="(min-width: 1000px)">
-             <source srcset="images/lago-medium.webp" media="(min-width: 550px)">
-             <img src="images/lago-dicomo.webp" width="400" height="200" alt="Lago Di Como">
+                <source srcset="images/lago-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/lago-medium.webp" media="(min-width: 550px)">
+                <img src="images/lago-dicomo.webp" width="400" height="200" alt="Lago Di Como">
             </picture>
         </div>
+        <section class="data">
+            <h2>Datos</h2>
+            <dl>
+                <dt>Área de captación:</dt>
+                <dd>4.509 km²</dd>
+                <dt>Población:</dt>
+                <dd>777</dd>
+                <dt>Ubicación:</dt>
+                <dd>Lombardía, Italia</dd>
+                <dt>Idioma:</dt>
+                <dd>Italiano</dd>
+                <dt>Longitud máxima:</dt>
+                <dd>46 km</dd>
+                <dt>Ancho máximo:</dt>
+                <dd>4.5 km</dd>
+                <dt>Área de superficie:</dt>
+                <dd>154 km²</dd>
+                <dt>Profundidad máxima:</dt>
+                <dd>425 m</dd>
+            </dl>
+        </section>
+        <section class="weather">
+            <h2>Clima</h2>
+            <div>
+                <img class="icon" src="images/weather.svg" width="100" alt="Icono del clima">
+            </div>
+            <dl>
+                <dt>Temperatura:</dt>
+                <dd>25°C</dd>
+                <dt>Condiciones:</dt>
+                <dd>Despejado</dd>
+                <dt>Viento:</dt>
+                <dd>4 km/h</dd>
+                <dt>Sensación térmica:</dt>
+                <dd><span id="windChill"></span></dd>
+            </dl>
+        </section>
     </main>
-    <section class="data">
-        <h2>Data</h2>
-        <h3>Catchment Area: <p>4.509 km2</p></h3>
-        <h3>Population: <p>777</p></h3>
-        <h3>Location: <p>Lombardy, Italy</p></h3>
-        <h3>Language: <p>Italian</p></h3>
-        <h3>Max. length: <p>46km</p></h3>
-        <h3>Max width: <p>4.5km</p></h3>
-        <h3>Surface Area: <p>154m</p></h3>
-        <h3>Max. depth: <p>425m</p></h3>
-    </section>
-    <section class="weather">
-        <h2>Weather </h2>
-        <h3><img class="icon" src="images/weather.svg"  width="100" alt="icon"></h3>
-        <h3>Temperature: <p>25°C</p></h3>
-        <h3>Conditions: <p>Clear</p></h3>
-        <h3>Wind: <p>4 km/h</p></h3>
-        <h3>Wind Chill: <p><span id="windChill"></span></p></h3>
-    </section>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Angela Chacon</p>
-        <p>Last Modified <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> Angela Chacon</p>
+        <p>Última modificación: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

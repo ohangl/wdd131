@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     h2.weather::after {
         content: url('images/weather-icon.svg'); 
     }
@@ -16,6 +16,11 @@
         border-radius: 10%;
         margin: auto;
         padding: 1rem;
+    }
+
+    .hero {
+        background-position: 0%;
+        background-size: cover;
     }
     .weather {
         right: 45px;
