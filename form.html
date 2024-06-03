@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Product Review Form Angela Chacon">
+    <meta name="author" content="Angela Chacon">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <script src="scripts/script-product.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Overall Rating:</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" title="5 stars">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">&#9733;</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+            <div class="form-group">
+                <label>Which features did u find useful in the product?</label>
+                <div class="features">
+                    <label for="feature1">Durability</label>
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                    <label for="feature2">Ease of Use</label>
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                    <label for="feature3">Performance</label>
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="review">Written Review</label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>@ <span id="currentYear">2024</span> Angela Chacon, Argentina</p>
+        <p>
+          <span id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
