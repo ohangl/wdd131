@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angela Chacon">
+    <meta name="description" content="Contact Page">
+    <title>Contact - My Digital Portfolio</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/lazyLoad.js"></script>
+    <script src="scripts/form.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education-experience.html">Experience & Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>CONTACT US</h1>
+            <p>Fill in the form below or email us directly at angelachacongonzalez@gmail.com. You're in good hands.</p>
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Full name*</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email address*</label>
+                    <input type="email" id="email-address" name="email-address" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">What services are u looking for?</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="website">Comments or Details</label>
+                    <input type="url" id="website" name="website">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
